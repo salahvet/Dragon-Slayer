@@ -190,9 +190,13 @@ while (playerPV > 0 && dragonPV > 0){
     
 }
 
-affichageEtat();
+
 if (playerPV <= 0) {
+    playerPV =0;
+    affichageEtat();
     affichageFin("dragon");
 } else if (dragonPV <= 0){
+    dragonPV = 0;
+    affichageEtat();
     affichageFin("player");
 }
